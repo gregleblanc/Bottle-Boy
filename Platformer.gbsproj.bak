@@ -11912,7 +11912,7 @@
         },
         {
             "id": "plat_walk_vel",
-            "value": 3736
+            "value": 2470
         },
         {
             "id": "plat_grav",
@@ -11920,19 +11920,31 @@
         },
         {
             "id": "plat_max_fall_vel",
-            "value": 12299
+            "value": 11294
         },
         {
             "id": "plat_hold_grav",
-            "value": 1676
+            "value": 1719
         },
         {
             "id": "plat_jump_vel",
-            "value": 25469
+            "value": 26090
         },
         {
             "id": "plat_run_vel",
             "value": 6926
+        },
+        {
+            "id": "plat_dec",
+            "value": 486
+        },
+        {
+            "id": "plat_walk_acc",
+            "value": 137
+        },
+        {
+            "id": "plat_min_vel",
+            "value": 0
         }
     ],
     "settings": {
@@ -11945,7 +11957,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 2046,
-        "worldScrollY": 1007,
+        "worldScrollY": 1006,
         "zoom": 425.0804443359375,
         "customColorsEnabled": true,
         "sgbEnabled": false,
