@@ -685,49 +685,83 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "   Someone help!! ...",
-                                    "My cat is stuck up \nthere in that goop! ...",
-                                    "Hey, you over there!"
+                                    "Help! My cat is stuck!"
                                 ],
                                 "avatarId": "47f7122f-57ad-45e0-b705-f3c5a4fb7a1b"
                             },
                             "id": "db5b5673-1c1b-45b5-b2a9-85b4b6a96c5c"
                         },
                         {
+                            "command": "EVENT_CHOICE",
+                            "args": {
+                                "variable": "L0",
+                                "trueText": "Why should I?",
+                                "falseText": "Leave"
+                            },
+                            "id": "a85ec842-c630-4c82-b1ba-7cf385ccb194"
+                        },
+                        {
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": true,
+                                "__collapse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_STOP",
+                                        "args": {},
+                                        "id": "30915f23-8bd8-40bc-b1e5-a187987c8c54"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "84ff9981-4576-4f3a-9a8a-c3f5322e6cfa"
+                        },
+                        {
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "Erm...Yes?"
+                                    "I have something\nfor you if you do."
                                 ],
-                                "avatarId": "a257128e-447c-476d-9c2d-b7b3c5229d59"
+                                "avatarId": "47f7122f-57ad-45e0-b705-f3c5a4fb7a1b"
                             },
                             "id": "fcd914e2-c4ee-4f91-9c57-b173c8bf580d"
                         },
                         {
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "If you help get my \ncat down, I have...",
-                                    "a key to help you up\nahead."
-                                ],
-                                "avatarId": "47f7122f-57ad-45e0-b705-f3c5a4fb7a1b"
-                            },
-                            "id": "6f5a6070-3b73-4763-bc8c-c060455a44cc"
-                        },
-                        {
                             "command": "EVENT_CHOICE",
                             "args": {
-                                "variable": "T0",
+                                "variable": "L1",
                                 "trueText": "Help",
                                 "falseText": "Leave"
                             },
-                            "id": "fab5db57-9e9e-483f-8608-7b7f194ee439"
+                            "id": "24663949-a40e-4fad-80d8-da736dd78f0b"
+                        },
+                        {
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "L1",
+                                "__collapseElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_STOP",
+                                        "args": {},
+                                        "id": "5dd20051-f937-44cf-8349-8e332cc03c6c"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "c540a0c4-3a57-44ca-8762-9926218db78f"
                         },
                         {
                             "command": "EVENT_IF_TRUE",
                             "args": {
-                                "variable": "T0",
-                                "__collapseElse": false
+                                "variable": "L1",
+                                "__collapseElse": false,
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -735,9 +769,9 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Sure. Why not?"
+                                                "Thank you! \nI'll wait here."
                                             ],
-                                            "avatarId": "a257128e-447c-476d-9c2d-b7b3c5229d59"
+                                            "avatarId": "47f7122f-57ad-45e0-b705-f3c5a4fb7a1b"
                                         },
                                         "id": "bae716c8-a30e-4209-8939-f8a525638d00"
                                     },
@@ -898,8 +932,8 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "Thank you so much! \n...",
-                                    "As promised, here\nis your key."
+                                    "Mr. Cupcakes!!\nThank you ...",
+                                    "Here's a key to help \nyou up ahead."
                                 ],
                                 "avatarId": "47f7122f-57ad-45e0-b705-f3c5a4fb7a1b"
                             },
@@ -1162,11 +1196,11 @@
             "autoFadeEventCollapse": true,
             "parallax": [
                 {
-                    "height": 5,
+                    "height": 4,
                     "speed": 2
                 },
                 {
-                    "height": 3,
+                    "height": 2,
                     "speed": 1
                 },
                 {
@@ -11911,7 +11945,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 2046,
-        "worldScrollY": 990,
+        "worldScrollY": 1007,
         "zoom": 425.0804443359375,
         "customColorsEnabled": true,
         "sgbEnabled": false,
