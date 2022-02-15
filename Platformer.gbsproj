@@ -1036,7 +1036,7 @@
                                             "actorId": "$self$",
                                             "x": {
                                                 "type": "number",
-                                                "value": 2
+                                                "value": 1
                                             },
                                             "y": {
                                                 "type": "number",
@@ -1062,7 +1062,7 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "b2329828-6e44-4b65-bf4a-d21ee3c7019c",
-                    "x": 2,
+                    "x": 1,
                     "y": 2
                 },
                 {
@@ -14451,9 +14451,9 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 2070,
-        "worldScrollY": 970,
-        "zoom": 432.5274658203125,
+        "worldScrollX": 2614,
+        "worldScrollY": 1309,
+        "zoom": 554.053955078125,
         "customColorsEnabled": true,
         "sgbEnabled": false,
         "customHead": "",
