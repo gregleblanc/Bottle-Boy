@@ -991,7 +991,7 @@
                     "animate": false,
                     "spriteSheetId": "44ca9236-5a97-4a21-bb27-6a101f377adb",
                     "direction": "down",
-                    "moveSpeed": 1,
+                    "moveSpeed": 4,
                     "animSpeed": 15,
                     "paletteId": "",
                     "isPinned": true,
@@ -1021,7 +1021,7 @@
                                             "actorId": "$self$",
                                             "x": {
                                                 "type": "number",
-                                                "value": 15
+                                                "value": 14
                                             },
                                             "y": {
                                                 "type": "number",
@@ -1046,6 +1046,11 @@
                                             "useCollisions": false
                                         },
                                         "id": "85657077-0f56-44cd-9ba0-684026878b50"
+                                    },
+                                    {
+                                        "command": "EVENT_STOP",
+                                        "args": {},
+                                        "id": "135a638f-9d1a-4b10-85d3-679d288d9348"
                                     }
                                 ],
                                 "false": []
@@ -1149,6 +1154,14 @@
             ],
             "script": [
                 {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "87e0df2f-2c98-4de7-8132-cc927b901922",
+                        "loop": true
+                    },
+                    "id": "81b8a6d0-d34c-4446-852b-93f0f94ada30"
+                },
+                {
                     "command": "EVENT_IF_TRUE",
                     "args": {
                         "variable": "1",
@@ -1177,6 +1190,13 @@
                                     "actorId": "5ad2d902-3837-4add-b499-a5f70c8e5ab7"
                                 },
                                 "id": "d861f1e7-2c8e-4906-8ac9-f8a847f555ca"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_STOP_UPDATE",
+                                "args": {
+                                    "actorId": "b2329828-6e44-4b65-bf4a-d21ee3c7019c"
+                                },
+                                "id": "0bbf03fd-3a61-4278-8a3e-300651217eba"
                             }
                         ],
                         "false": [
@@ -13841,6 +13861,13 @@
     ],
     "music": [
         {
+            "id": "87e0df2f-2c98-4de7-8132-cc927b901922",
+            "name": "song_template",
+            "filename": "song_template.uge",
+            "settings": {},
+            "type": "uge"
+        },
+        {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
@@ -13986,8 +14013,8 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 2133,
-        "worldScrollY": 950,
+        "worldScrollX": 2042,
+        "worldScrollY": 967,
         "zoom": 432.5274658203125,
         "customColorsEnabled": true,
         "sgbEnabled": false,

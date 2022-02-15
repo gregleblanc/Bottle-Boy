@@ -991,7 +991,7 @@
                     "animate": false,
                     "spriteSheetId": "44ca9236-5a97-4a21-bb27-6a101f377adb",
                     "direction": "down",
-                    "moveSpeed": 1,
+                    "moveSpeed": 4,
                     "animSpeed": 15,
                     "paletteId": "",
                     "isPinned": true,
@@ -1021,7 +1021,7 @@
                                             "actorId": "$self$",
                                             "x": {
                                                 "type": "number",
-                                                "value": 15
+                                                "value": 11
                                             },
                                             "y": {
                                                 "type": "number",
@@ -1046,6 +1046,11 @@
                                             "useCollisions": false
                                         },
                                         "id": "85657077-0f56-44cd-9ba0-684026878b50"
+                                    },
+                                    {
+                                        "command": "EVENT_STOP",
+                                        "args": {},
+                                        "id": "135a638f-9d1a-4b10-85d3-679d288d9348"
                                     }
                                 ],
                                 "false": []
@@ -1185,6 +1190,13 @@
                                     "actorId": "5ad2d902-3837-4add-b499-a5f70c8e5ab7"
                                 },
                                 "id": "d861f1e7-2c8e-4906-8ac9-f8a847f555ca"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_STOP_UPDATE",
+                                "args": {
+                                    "actorId": "b2329828-6e44-4b65-bf4a-d21ee3c7019c"
+                                },
+                                "id": "0bbf03fd-3a61-4278-8a3e-300651217eba"
                             }
                         ],
                         "false": [
@@ -14001,8 +14013,8 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 2041,
-        "worldScrollY": 968,
+        "worldScrollX": 2042,
+        "worldScrollY": 967,
         "zoom": 432.5274658203125,
         "customColorsEnabled": true,
         "sgbEnabled": false,
