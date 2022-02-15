@@ -991,49 +991,13 @@
                     "animate": false,
                     "spriteSheetId": "44ca9236-5a97-4a21-bb27-6a101f377adb",
                     "direction": "down",
-                    "moveSpeed": 6,
+                    "moveSpeed": 1,
                     "animSpeed": 15,
                     "paletteId": "",
                     "isPinned": true,
                     "collisionGroup": "",
                     "script": [],
-                    "startScript": [
-                        {
-                            "command": "EVENT_IF_TRUE",
-                            "args": {
-                                "variable": "1",
-                                "__collapseElse": true
-                            },
-                            "children": {
-                                "true": [
-                                    {
-                                        "command": "EVENT_ACTOR_STOP_UPDATE",
-                                        "args": {
-                                            "actorId": "$self$"
-                                        },
-                                        "id": "4e90c54f-2b08-4f07-94be-0cb958372d1b"
-                                    },
-                                    {
-                                        "command": "EVENT_ACTOR_SET_POSITION",
-                                        "args": {
-                                            "actorId": "$self$",
-                                            "x": {
-                                                "type": "number",
-                                                "value": 1
-                                            },
-                                            "y": {
-                                                "type": "number",
-                                                "value": 2
-                                            }
-                                        },
-                                        "id": "107ace46-1340-4609-9316-5d136fab3636"
-                                    }
-                                ],
-                                "false": []
-                            },
-                            "id": "4fc6ab73-ce7f-41c6-b3ab-30e2b91cb576"
-                        }
-                    ],
+                    "startScript": [],
                     "updateScript": [
                         {
                             "command": "EVENT_IF_TRUE",
@@ -1057,7 +1021,7 @@
                                             "actorId": "$self$",
                                             "x": {
                                                 "type": "number",
-                                                "value": 11
+                                                "value": 15
                                             },
                                             "y": {
                                                 "type": "number",
@@ -1082,13 +1046,6 @@
                                             "useCollisions": false
                                         },
                                         "id": "85657077-0f56-44cd-9ba0-684026878b50"
-                                    },
-                                    {
-                                        "command": "EVENT_ACTOR_STOP_UPDATE",
-                                        "args": {
-                                            "actorId": "$self$"
-                                        },
-                                        "id": "3a4fb431-d2d4-4d3b-bcb4-297abb42eb74"
                                     }
                                 ],
                                 "false": []
@@ -1191,6 +1148,14 @@
                 }
             ],
             "script": [
+                {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "87e0df2f-2c98-4de7-8132-cc927b901922",
+                        "loop": true
+                    },
+                    "id": "81b8a6d0-d34c-4446-852b-93f0f94ada30"
+                },
                 {
                     "command": "EVENT_IF_TRUE",
                     "args": {
@@ -13884,6 +13849,13 @@
     ],
     "music": [
         {
+            "id": "87e0df2f-2c98-4de7-8132-cc927b901922",
+            "name": "song_template",
+            "filename": "song_template.uge",
+            "settings": {},
+            "type": "uge"
+        },
+        {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
@@ -14029,9 +14001,9 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 2137,
-        "worldScrollY": 1153,
-        "zoom": 481.44061279296875,
+        "worldScrollX": 2041,
+        "worldScrollY": 968,
+        "zoom": 432.5274658203125,
         "customColorsEnabled": true,
         "sgbEnabled": false,
         "customHead": "",

@@ -991,29 +991,13 @@
                     "animate": false,
                     "spriteSheetId": "44ca9236-5a97-4a21-bb27-6a101f377adb",
                     "direction": "down",
-                    "moveSpeed": 4,
+                    "moveSpeed": 1,
                     "animSpeed": 15,
                     "paletteId": "",
                     "isPinned": true,
                     "collisionGroup": "",
                     "script": [],
-                    "startScript": [
-                        {
-                            "command": "EVENT_ACTOR_SET_POSITION",
-                            "args": {
-                                "actorId": "$self$",
-                                "x": {
-                                    "type": "number",
-                                    "value": 1
-                                },
-                                "y": {
-                                    "type": "number",
-                                    "value": 2
-                                }
-                            },
-                            "id": "54b80f09-8f1b-4704-97bb-5d67949cfb56"
-                        }
-                    ],
+                    "startScript": [],
                     "updateScript": [
                         {
                             "command": "EVENT_IF_TRUE",
@@ -1037,7 +1021,7 @@
                                             "actorId": "$self$",
                                             "x": {
                                                 "type": "number",
-                                                "value": 11
+                                                "value": 15
                                             },
                                             "y": {
                                                 "type": "number",
@@ -1062,13 +1046,6 @@
                                             "useCollisions": false
                                         },
                                         "id": "85657077-0f56-44cd-9ba0-684026878b50"
-                                    },
-                                    {
-                                        "command": "EVENT_ACTOR_STOP_UPDATE",
-                                        "args": {
-                                            "actorId": "$self$"
-                                        },
-                                        "id": "3a4fb431-d2d4-4d3b-bcb4-297abb42eb74"
                                     }
                                 ],
                                 "false": []
@@ -14009,9 +13986,9 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 2137,
-        "worldScrollY": 1153,
-        "zoom": 481.44061279296875,
+        "worldScrollX": 2133,
+        "worldScrollY": 950,
+        "zoom": 432.5274658203125,
         "customColorsEnabled": true,
         "sgbEnabled": false,
         "customHead": "",
